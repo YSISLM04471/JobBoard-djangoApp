@@ -6,3 +6,4 @@ class JobPosting(models.Model):
     description = models.TextField()
     company = models.CharField(max_length=50)
     salary = models.IntegerField()
+    is_active = models.BooleanField(default=False)
