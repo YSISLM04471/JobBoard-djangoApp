@@ -1,0 +1,6 @@
+1. python -m venv env #creating virtual env
+2. .\env\Scripts\activate # going virtual env
+3. pip install django #installing django
+4. django-admin startproject config . #django project initialization
+5. python manage.py startapp <yourProjectName> # creating project
+6. python manage.py runserver # for running server or live site
