@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	
+     <table style="border-collapse: collapse;">
+         <thead>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Company</th>
+            <th>Salary</th>
+         </thead>
+         <tbody>
+           {% for job in jobs%}
+             <tr>
+                <td>{{job.title}}</td>
+                <td>{{job.description}}</td>
+                <td>{{job.company}}</td>
+                <td>{{job.salary}}</td>
+             </tr>
+           {%endfor%}
+         </tbody>
+     </table>
+
+  </body>
+</html>
