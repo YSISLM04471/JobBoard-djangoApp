@@ -14,3 +14,9 @@ python manage.py shell
 from <project>.models import <models>
 <project>.objects.create({name: "john", title="", salary=""})
 <project>.objects.find(name="john")
+job.title
+job.save()
+job.delete()
+
+ysislm1244
+
