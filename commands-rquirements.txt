@@ -4,3 +4,13 @@
 4. django-admin startproject config . #django project initialization
 5. python manage.py startapp <yourProjectName> # creating project
 6. python manage.py runserver # for running server or live site
+
+# db models commit / initialization 
+python manage.py makemigrations
+python manage.py migrate
+
+# db task
+python manage.py shell
+from <project>.models import <models>
+<project>.objects.create({name: "john", title="", salary=""})
+<project>.objects.find(name="john")
